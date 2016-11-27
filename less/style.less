@@ -1,0 +1,58 @@
+out: ../css/style.css
+/*Compiled Less will be in this folder*/
+
+@topBlue:#24e8ff;
+
+#topBar{
+  background-color: @topBlue;
+  #phone{
+    margin: 15px 0 10px 10px;
+    color: black;
+  }
+
+  #mailTo{
+    margin: 15px 0 10px 10px;
+    color: black;
+    a{
+      color: black;
+    }
+  }
+}
+
+.social-links{
+  margin-top: 10px;
+  padding-left: 0;
+  li{
+    display: inline;
+    margin-left: 8px
+  }
+  i{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    text-align: center;
+    line-height: 35px;
+    color:black;
+    &:hover{
+      background-color: #fa5d58;
+    }
+  }
+}
+
+@media only screen and (max-width : 321px) {
+  #topBar{
+    #phone{
+    }
+
+    #mailTo{
+      margin-top: 0;
+    }
+  }
+}
+
+@media only screen and (min-width : 426px) {
+  #topBar>:first-child{
+    text-align: right;
+  }
+}

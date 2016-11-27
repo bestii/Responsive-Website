@@ -1,0 +1,45 @@
+/*Compiled Less will be in this folder*/
+#topBar {
+  background-color: #24e8ff;
+}
+#topBar #phone {
+  margin: 15px 0 10px 10px;
+  color: black;
+}
+#topBar #mailTo {
+  margin: 15px 0 10px 10px;
+  color: black;
+}
+#topBar #mailTo a {
+  color: black;
+}
+.social-links {
+  margin-top: 10px;
+  padding-left: 0;
+}
+.social-links li {
+  display: inline;
+  margin-left: 8px;
+}
+.social-links i {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  text-align: center;
+  line-height: 35px;
+  color: black;
+}
+.social-links i:hover {
+  background-color: #fa5d58;
+}
+@media only screen and (max-width: 321px) {
+  #topBar #mailTo {
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 426px) {
+  #topBar > :first-child {
+    text-align: right;
+  }
+}
